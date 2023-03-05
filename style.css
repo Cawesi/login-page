@@ -1,0 +1,140 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container-page {
+    min-width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.box-form {
+    width: 400px;
+    min-height: 100px;
+    background-color: transparent;
+
+    border-radius: 20px;
+    border: 2px solid white;
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-form > h1 {
+    padding: 16px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.box-label {
+    width: 100%;
+    height: 80px;
+
+    position: relative;
+}
+
+.box-email-campo {
+    margin-bottom: 30px;
+}
+
+.box-label > div > input {
+    width: 300px;
+    padding: 8px 0 8px 4px;
+
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+
+    color: white;
+    background-color: transparent;
+}
+
+.container-input-pai {
+    display: flex;
+    position: relative;
+}
+
+.icon-input {
+    height: 16px;
+
+    position: absolute;
+
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.box-label > label {
+
+    padding-left: 6px;
+    position: relative;
+    top: 15px;
+    transition: 0.5s;
+}
+
+#email:focus, #senha:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.box-label:hover > .label-email,
+.box-label:hover > .label-senha {
+    top: 0;
+}
+
+.container-forget {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form > button {
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 20px;
+
+    border: 0;
+    border-radius: 16px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.campo-registro > p > strong:hover {
+    text-decoration: underline;
+}
+
+form > button,
+.box-remember:hover,
+input[type="checkbox"],
+.campo-registro > p > strong:hover {
+    cursor: pointer;
+}
+
+.box-remember,
+.campo-registro > p {
+    font-size: 14px;
+}
+
+.campo-registro {
+    padding-top: 15px;
+    padding-bottom: 32px;
+}
